@@ -308,9 +308,9 @@ public class DeviceList extends AppCompatActivity {
 
                     int mode = Integer.valueOf(devi.getString("mode"));
 
-                    if (mode >= 1) {
+                    //if (mode >= 1) {
 
-                        if (mode <= 5) {
+                        //if (mode <= 5) {
 
 
                             hm = new HashMap<>();
@@ -347,8 +347,8 @@ public class DeviceList extends AppCompatActivity {
 
                             //////////возможно утечка в hm
                             // hm.clear();
-                        }
-                    }
+                        //}
+                    //}
 
                 }
             } catch (Exception e) {
