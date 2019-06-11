@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/FFECEFF1</item>
+        <item name="colorButtonNormal">@color/newButtonColor</item>
+        <item name="android:itemBackground">@color/colorBlueGrey500</item>
+        <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+        <!--<item name="contentInsetStart">0dp</item>-->
+    </style>
+
+    <style name="ListViewDevices" parent="@android:style/Widget.ListView">
+        <!--<item name="android:background">#2F3F66</item>-->
+        <!--<item name="android:fastScrollEnabled">true</item>-->
+        <!--<item name="android:background">@drawable/list_item_background</item>-->
+    </style>
+
+</resources>

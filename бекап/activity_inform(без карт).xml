@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorIndigo50"
+    tools:context="example.kostya.mycar.InformActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/mainClr"
+        android:layout_gravity="center_horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- - -"
+                android:id="@+id/tbSubTitle"
+                android:layout_weight="1"
+                android:textColor="@color/colorIndigo50"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_shadow" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:id="@+id/fuelImg"
+                    android:src="@drawable/fuel4_dark_trnspr"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="- - -"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:id="@+id/txFuel"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorBlueGrey200" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/battery_dark"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:id="@+id/txVoltage"
+                    android:text="- - -"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/speedometer26_dark"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:id="@+id/txSpeed"
+                    android:text="- - -"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:id="@+id/imageSatellite"
+                    android:src="@drawable/radio48"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="- - -"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:id="@+id/txSatellite"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="290dp"
+                    android:progressDrawable="@drawable/verticalprogress"
+                    android:indeterminateOnly="false"
+                    android:id="@+id/fuelProgress"
+                    android:max="60"
+                    android:progress="0"
+                    android:indeterminate="false"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listCom"
+                    android:dividerHeight="10dp"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:divider="#00ffffff"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="www.mynex.example"
+            android:id="@+id/textView"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

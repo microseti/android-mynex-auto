@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name" translatable="false">Open Map</string>
+
+    <string name="unknown">Unknown</string>
+    <string name="map_mode">Map Source</string>
+    <string name="my_location">My location</string>
+    <string name="offline">Offline mode</string>
+    <string name="samples">Samples</string>
+    <string name="about">About</string>
+    <string name="about_message">This software uses map data provided by OpenStreetMap.org</string>
+
+    <string name="first_fix_message">Got the first fix</string>
+
+    <string name="set_mode_offline">Set to offline mode</string>
+    <string name="set_mode_online">Set to online mode</string>
+
+    <string name="set_mode_show_me">showing and tracking my current location</string>
+    <string name="set_mode_hide_me">hiding my current location</string>
+
+    <string name="format_distance_meters">%s m</string>
+    <string name="format_distance_kilometers">%s km</string>
+    <string name="format_distance_miles">%s mi</string>
+    <string name="format_distance_nautical_miles">%s nm</string>
+    <string name="format_distance_feet">%s ft</string>
+
+    <string name="compass">Compass</string>
+    <string name="cancel">Cancel</string>
+    <string name="cache_current_size">Cache Current Size</string>
+    <string name="cache_manager">Cache Manager</string>
+    <string name="cache_manager_description">The Cache Manager lets you manage what\'s cached on this device and enables you to download and cache tiles locally. Keep in mind, there may be legal implications. Use with caution and be sure to read the usage agreement(s) or terms of service with the tile source.</string>
+    <string name="cache_download">Start Download</string>
+
+</resources>

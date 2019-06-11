@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mynex.Авто</string>
+
+    <string name="login">Логин</string>
+    <string name="pass">Пароль</string>
+    <string name="demo">demo</string>
+    <string name="btLogin">login</string>
+    <string name="action_exit">Выход</string>
+    <string name="action_close">Закрыть сессию</string>
+
+
+</resources>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.kostya.mycar.InformActivity">
+
+   <!-- <item android:id="@+id/action_close_session"
+        android:title="@string/action_close"
+        android:orderInCategory="90"
+        app:showAsAction="never" />-->
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_exit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

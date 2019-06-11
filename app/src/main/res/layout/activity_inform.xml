@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/mainLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="example.kostya.mycar.InformActivity"
+    tools:ignore="missingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapLay">
+
+    </RelativeLayout>
+
+   <!--<org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/mainClr"
+            android:layout_gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:id="@+id/label_name"
+                android:text="- - -"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/tool_bar_inform"
+            layout="@layout/tool_bar_inform"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/mainClr"
+            android:layout_gravity="center_horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fillViewport="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="- - -"
+                    android:id="@+id/tbSubTitle"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorIndigo50"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fuelLayMain"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignParentRight="false">
+
+                    <ProgressBar
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:progressDrawable="@drawable/verticalprogress"
+                        android:indeterminateOnly="false"
+                        android:id="@+id/fuelProgress"
+                        android:max="60"
+                        android:progress="0"
+                        android:indeterminate="false"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fuelLay"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/fuelImg"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="5dp" />
+
+                        <TextView
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/txFuel"
+                            android:gravity="bottom"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="left"
+                            android:textColor="@color/colorBlueGrey200"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listCom"
+                    android:dividerHeight="5dp"
+                    android:divider="#00ffffff"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/satLay"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/satLay"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/imageSatellite"
+                        android:src="@drawable/radio48"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="- - -"
+                        android:id="@+id/txSatellite"
+                        android:gravity="bottom"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/speedLay"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/satLay"
+                    android:layout_toStartOf="@+id/satLay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/speedometer26_dark"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txSpeed"
+                        android:text="- - -"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voltageLay"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/speedLay"
+                    android:layout_toStartOf="@+id/speedLay"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/battery_dark"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_column="2"
+                        android:layout_row="0"
+                        android:id="@+id/txVoltage"
+                        android:text="- - -"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/meBut"
+                    android:layout_below="@+id/satLay"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_background"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/ic_me_24px"
+                    android:tint="@color/colorBlueGrey700"/>
+
+                <ImageButton
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/devBut"
+                    android:layout_below="@+id/meBut"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_background"
+                    app:srcCompat="@drawable/ic_dev_24px"
+                    android:tint="@color/colorBlueGrey700"/>
+
+                <!--здесь были спутники и тд-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

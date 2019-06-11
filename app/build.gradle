@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        mycar {
+            keyAlias 'Kostya'
+            keyPassword 'astrograf_progect'
+            storeFile file('/home/Konstantin/Android/key/Mycar.jks')
+            storePassword 'astrograf_progect'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "example.kostya.mycar"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 11
+        versionName "1.1.7"
+        generatedDensities = []
+        //multiDexEnabled true
+    }
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    //compile 'com.android.support:multidex:1.0.1'
+
+    compile 'org.osmdroid:osmdroid-android:5.1@aar'
+    compile 'com.github.MKergall.osmbonuspack:OSMBonusPack:v5.8.1'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+}

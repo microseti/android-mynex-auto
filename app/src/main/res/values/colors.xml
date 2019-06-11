@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorBlueGrey500</color>
+    <color name="colorPrimaryDark">@color/colorBlueGrey800</color>
+    <color name="colorAccent">#009958</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorLablet">@color/colorBlueGrey400</color>
+
+    <color name="mainClr">@color/colorBlueGrey500</color>
+    <color name="prgClr">@color/colorIndigo50</color>
+    <color name="cursorClr">@color/colorBlueGrey500</color>
+    <color name="strokeClr">@color/colorBlueGrey700</color>
+    <color name="black">#000000</color>
+
+<!--Indigo-->
+    <color name="colorIndigo50">#E8EAF6</color>
+    <color name="colorIndigo100">#C5CAE9</color>
+    <color name="colorIndigo200">#9FA8DA</color>
+    <color name="colorIndigo300">#7986CB</color>
+    <color name="colorIndigo400">#5C6BC0</color>
+    <color name="colorIndigo500">#3F51B5</color>
+    <color name="colorIndigo600">#3949AB</color>
+    <color name="colorIndigo700">#303F9F</color>
+    <color name="colorIndigo800">#283593</color>
+    <color name="colorIndigo900">#1A237E</color>
+
+    <color name="colorIndigoA100">#8C9EFF</color>
+    <color name="colorIndigoA200">#536DFE</color>
+    <color name="colorIndigoA400">#3D5AFE</color>
+    <color name="colorIndigoA700">#304FFE</color>
+<!---->
+
+<!--BlueGrey-->
+    <color name="colorBlueGrey50">#ECEFF1</color>
+    <color name="colorBlueGrey50trnsp">#DFECEFF1</color>
+    <color name="colorBlueGrey100">#CFD8DC</color>
+    <color name="colorBlueGrey200">#B0BEC5</color>
+    <color name="colorBlueGrey300">#90A4AE</color>
+    <color name="colorBlueGrey300trnsp">#7f90a4ae</color>
+    <color name="colorBlueGrey400">#78909C</color>
+    <color name="colorBlueGrey400trnsp">#7f78909C</color>
+    <color name="colorBlueGrey500">#607D8B</color>
+    <color name="colorBlueGrey500trnsp">#7f607D8B</color>
+    <color name="colorBlueGrey600">#546E7A</color>
+    <color name="colorBlueGrey700">#455A64</color>
+    <color name="colorBlueGrey700trnsp">#8a455a64</color>
+    <color name="colorBlueGrey800">#37474F</color>
+    <color name="colorBlueGrey900">#263238</color>
+<!---->
+
+    <color name="ColorPrimary">#5a81f7</color>
+    <color name="ColorPrimaryDark">#14497b</color>
+    <color name="tabsScrollColor2">#102e51</color>
+    <color name="tabsScrollColor">#ffffff</color>
+
+    <color name="activClr">#009688</color>
+    <color name="unActivClr">#E57373</color>
+
+
+    <color name="actBackground">@color/colorBlueGrey50</color>
+
+    <color name="newButtonColor">@color/colorBlueGrey50trnsp</color>
+    <color name="newButtonColorPressed">@color/colorBlueGrey500trnsp</color>
+    <color name="buttonStroke">@color/colorBlueGrey300trnsp</color>
+
+    <color name="newButtonColorActive">#8a388E3C</color>
+    <color name="newButtonColorPressedActive">#8a1B5E20</color>
+
+    <color name="listPressed">#c4c4c4</color>
+    <color name="FFECEFF1">#eceff1</color>
+    <color name="transparent">#00ffffff</color>
+</resources>
