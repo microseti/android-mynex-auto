@@ -308,47 +308,42 @@ public class DeviceList extends AppCompatActivity {
 
                     int mode = Integer.valueOf(devi.getString("mode"));
 
-                    //if (mode >= 1) {
+                    if ((mode >= 1 && mode <= 6) || mode == 99 || mode == 100 || mode == 150) {
+                        hm = new HashMap<>();
+                        hm.put(IDOBJ, idobj);
+                        hm.put(NAME, nameObj); // Название
+                        hm.put(PLACE, "...");
+                        hm.put(SATSTEXT, sats); // Описание
 
-                        //if (mode <= 5) {
-
-
-                            hm = new HashMap<>();
-                            hm.put(IDOBJ, idobj);
-                            hm.put(NAME, nameObj); // Название
-                            hm.put(PLACE, "...");
-                            hm.put(SATSTEXT, sats); // Описание
-
-                            if (NET == 0) {
-                                hm.put(SIGNALICON, R.drawable.ic_signal_lost_24dp);
-                            } else {
-                                switch (Integer.valueOf(signal)) {
-                                    case 0:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_0_24dp); // Картинка
-                                        break;
-                                    case 1:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_1_24dp); // Картинка
-                                        break;
-                                    case 2:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_2_24dp); // Картинка
-                                        break;
-                                    case 3:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_3_24dp); // Картинка
-                                        break;
-                                    case 4:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_4_24dp); // Картинка
-                                        break;
-                                    case 5:
-                                        hm.put(SIGNALICON, R.drawable.ic_signal_5_24dp); // Картинка
-                                        break;
-                                }
+                        if (NET == 0) {
+                            hm.put(SIGNALICON, R.drawable.ic_signal_lost_24dp);
+                        } else {
+                            switch (Integer.valueOf(signal)) {
+                                case 0:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_0_24dp); // Картинка
+                                    break;
+                                case 1:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_1_24dp); // Картинка
+                                    break;
+                                case 2:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_2_24dp); // Картинка
+                                    break;
+                                case 3:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_3_24dp); // Картинка
+                                    break;
+                                case 4:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_4_24dp); // Картинка
+                                    break;
+                                case 5:
+                                    hm.put(SIGNALICON, R.drawable.ic_signal_5_24dp); // Картинка
+                                    break;
                             }
-                            mCatList.add(hm);
+                        }
+                        mCatList.add(hm);
 
                             //////////возможно утечка в hm
                             // hm.clear();
-                        //}
-                    //}
+                    }
 
                 }
             } catch (Exception e) {
